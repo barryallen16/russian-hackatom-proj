@@ -24,46 +24,45 @@ const EnergyPrediction = () => {
   };
 
   return (
-    <div >
-      <h1 className="font-display m-4 text-white ">
+    <div className="p-6">
+      <h1 className="font-display mb-4 text-white text-lg">
         Next Day Energy Generation Model
       </h1>
-      <label className="font-display m-4 text-white">
+      <label className="font-display mb-2 block text-white">
         Energy consumption in day (MW):
-        <input className="text-black"
+        <input
+          className="text-black mt-1 mb-4 block w-full p-2 border border-gray-300 rounded"
           type="number"
           value={dayEnergy}
           onChange={(e) => setDayEnergy(e.target.value)}
         />
       </label>
-      <br />
-      <label className="font-display m-4 text-white">
+      <label className="font-display mb-2 block text-white">
         Energy consumption in night (MW):
-        <input className="text-black"
+        <input
+          className="text-black mt-1 mb-4 block w-full p-2 border border-gray-300 rounded"
           type="number"
           value={nightEnergy}
           onChange={(e) => setNightEnergy(e.target.value)}
         />
       </label>
-      <br />
-      <label className="font-display m-4 text-white">
+      <label className="font-display mb-2 block text-white">
         Population of the Area:
-        <input className="text-black"
+        <input
+          className="text-black mt-1 mb-4 block w-full p-2 border border-gray-300 rounded"
           type="number"
           value={population}
           onChange={(e) => setPopulation(e.target.value)}
         />
       </label>
-      <br />
       <button
         onClick={handlePredict}
-        className="font-display m-4 text-white bg-black0e p-4 rounded-md"
+        className="font-display mb-4 text-white bg-black0e p-4 rounded-md"
       >
         Predict
       </button>
-      <br />
       {prediction !== null && (
-        <p className="font-display m-4 text-white ">
+        <p className="font-display mt-4 text-white">
           Prediction: {prediction} (GW)
         </p>
       )}
