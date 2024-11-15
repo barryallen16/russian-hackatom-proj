@@ -1,0 +1,34 @@
+
+          .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+            stroke-width: 0px;
+          }
+    
+          .cls-1, .cls-6 {
+            fill: #000;
+          }
+    
+          .cls-2 {
+            fill: url(#linear-gradient);
+            opacity: .8;
+          }
+    
+          .cls-3 {
+            fill: none;
+          }
+    
+          .cls-6 {
+            stroke: #fff;
+            stroke-miterlimit: 10;
+          }
+    
+          .cls-4 {
+            fill: url(#linear-gradient-2);
+          }
+    
+          .cls-7 {
+            clip-path: url(#clippath);
+          }
+    
+          .cls-5 {
+            fill: #fff;
+          }
